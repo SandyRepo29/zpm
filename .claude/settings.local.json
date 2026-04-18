@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npm run *)",
+      "Read(//tmp/**)",
+      "Bash(node -e ' *)",
+      "Bash(pkill -f \"nodemon server.js\")",
+      "Bash(pkill -f \"node server.js\")",
+      "Bash(netstat -ano)",
+      "Bash(awk '{print $5}')",
+      "Bash(xargs -I{} taskkill //F //PID {})",
+      "Bash(curl -s http://localhost:4000/api/health)",
+      "Bash(curl -s http://localhost:4000/api/resources)",
+      "Bash(curl -s -X POST http://localhost:4000/api/resources -H 'Content-Type: application/json' -d '{\"first_name\":\"Jane\",\"last_name\":\"Smith\",\"department\":\"BE\"}')",
+      "Bash(curl -s -X POST http://localhost:4000/api/resources -H 'Content-Type: application/json' -d '{\"first_name\":\"Alex\",\"last_name\":\"Kumar\",\"department\":\"RE\"}')",
+      "Bash(python3 -c ' *)",
+      "Bash(pip install *)",
+      "Bash(python -m pip install pandas openpyxl -q)",
+      "Bash(python -c ' *)",
+      "Bash(node seed.js)",
+      "Bash(python -c \"import sys,json; data=json.load\\(sys.stdin\\); print\\(f'Total: {len\\(data\\)}'\\); [print\\(f\\\\\"{r['first_name']} {r['last_name']} | {r['department']} | {r['job_title']} | {r['location']} | active={r['is_active']}\\\\\"\\) for r in data[:5]]\")",
+      "Bash(curl -s http://localhost:4000/api/teams)",
+      "Bash(curl -s -X POST http://localhost:4000/api/teams -H \"Content-Type: application/json\" -d '{\"name\":\"Avengers\",\"description\":\"Core backend squad\"}')",
+      "Bash(npx vite *)",
+      "Bash(python -c \"import sys,json; teams=json.load\\(sys.stdin\\); [print\\(f\\\\\"{t['name']}: {t['member_count']} members\\\\\"\\) for t in teams]\")"
+    ]
+  }
+}
