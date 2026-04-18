@@ -1,0 +1,7 @@
+{
+  "name": "zpm",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd frontend && npm install && node node_modules/vite/bin/vite.js build"
+  }
+}
