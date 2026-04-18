@@ -8,9 +8,11 @@ const sql = postgres({
   port:     Number(process.env.DB_PORT) || 6543,
   database: process.env.DB_NAME     || 'postgres',
   username: process.env.DB_USER     || 'postgres.fsghwrmbplhjkcswhvfg',
-  password: process.env.DB_PASSWORD || '',
+  password: process.env.DB_PASSWORD,
   ssl:      'require',
-  max:      10,
+  max:      1,
+  idle_timeout: 20,
+  connect_timeout: 10,
 });
 
 module.exports = sql;
